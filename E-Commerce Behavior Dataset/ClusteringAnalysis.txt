@@ -1,0 +1,21 @@
+Raaid Chaudry
+Mirza Baig
+
+
+When we applied our Custom KMeans algorithm and compared it to the existing sklearn KMeans algorithm, the results were
+extremely similar, so we determined it to be a success. We tried multiple scatterplots, but the most cohesive method was to 
+first reduce the amount of entries actually showing up in the graph, which we did via sampling. This randomly sampled a specified
+amount of entries (1000 in our case) and set them into another dataframe that we made which we will use for our scatterplot. 
+
+From here, we analyzed which specific plots looked best, and many of them did not work, or produced results which better suited
+a bar graph or histogram rather than a scatter plot, with an overwhelming amount of data neatly arranged along lines.
+
+The columns that worked the best were price and product_id fields. Once sampled and placed in a new dataframe, we were able to
+run both the SkLearn and CustomKMeans class on it and verify both results were similar. We saw clustering which indicated certain
+categories of product costing more than others, which does make sense. Our dataset includes products from homegoods to electroncis,
+which would too result in a difference of prices. A pair of children's shoes would not cost as much as a brand new iPhone, for
+example.
+
+Upon analyzing our elbow plot, we saw that picking a K-Value of 5 would give us the best result in clustering. This roughly 
+matches how many categories exist within the product_category column. Things such as computers, large scale electronic equipment
+, and phones seemed to be clustered closer together, an informal supercategory we umbrella'd under the label "electronics". 
