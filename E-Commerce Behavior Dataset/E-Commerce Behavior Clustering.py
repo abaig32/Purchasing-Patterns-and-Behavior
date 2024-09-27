@@ -5,35 +5,14 @@ import matplotlib.pyplot as plt
 from KMeans import CustomKMeans
 import os
 from sklearn.cluster import KMeans
+from DataCleaning import clean_data
 
 
-
-# List files in the current directory
-print("Files in the directory:", os.listdir())
-
-df = pd.read_csv('2019-Oct.csv')
-
-pd.set_option('display.max_columns', None)
 
 #Data Cleaning
+file = '2019-Oct.csv'
+df = clean_data(file)
 
-# #Analyzing the dataset
-df.info()
-
-#Dropping Duplicate Rows
-df.drop_duplicates(inplace=True)
-
-
-#Detecting Missing Values
-print(df.isnull().sum())
-
-#Dropping columns to create a smaller subset focusing on product categories
-#df = df.drop('user_session', axis=1)
-#df = df.drop('event_time', axis=1)
-#df.drop('user_id', axis=1)
-
-#Dropping all the null values
-df = df.dropna()
 
 ##
 
