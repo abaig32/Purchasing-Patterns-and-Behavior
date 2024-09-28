@@ -1,6 +1,4 @@
-Raaid Chaudry
-Mirza Baig
-
+Names: Raaid Chaudry, Mirza Baig
 
 When we applied our Custom KMeans algorithm and compared it to the existing sklearn KMeans algorithm, the results were
 extremely similar, so we determined it to be a success. We tried multiple scatterplots, but the most cohesive method was to 
