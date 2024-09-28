@@ -5,7 +5,7 @@ HOW TO RUN THE PROGRAM
 DATASET: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store 
 
 2. Insert dataset into data/raw directory
-3. Run the "DataCleaningScript.py" in the src folder
+3. Run the "DataCleaningScript.py" in the src directory
 4. This should create "cleaned_data.csv" in the data/cleaned directory 
 5. Navigate to the E-Commerce Behavior Dataset Exploration.ipynb and run all code
 6. Navigate to the E-Commerce Behavior Clustering.ipynb and run all code
