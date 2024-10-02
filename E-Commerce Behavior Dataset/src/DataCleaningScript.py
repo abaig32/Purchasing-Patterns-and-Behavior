@@ -14,7 +14,10 @@ def clean_data(df):
     df.drop_duplicates(inplace=True)
 
     #Dropping all the null values
-    df = df.dropna()
+    df = df.dropna().copy()
+
+    #Convert event_time column into datetime
+    df['event_time'] = pd.to_datetime(df['event_time'], utc=True, errors='coerce')
 
     return df
 
