@@ -13,7 +13,8 @@ the distribution of data and potential relationships.
 
 One interesting observation that we had was that the most popular productID and the price ranges for each product do not completely line up. For example, the most
 purchased productID has the second-highest price range when it comes to the top 10 most frequently purchased products. That is something that on the surface, doesn't
-make a lot of sense. However, a possible explanation to this could be that this particular product has features or capabilites that the other products do not. The most frequently
+make a lot of sense. This is because of the main assumption that products that have a lower and more affordable cost would be more popular with consumers. 
+However, a possible explanation to this could be that this particular product has features or capabilites that the other products do not. The most frequently
 purchased items are mostly smartphones, however, this particular productID was the most frequently selling smartphone of them all but at the 2nd highest price.
 
 Something else that we noticed was that the 'event_type' column had 3 data values which were 'view', 'cart', and 'remove_from_cart'. When we did a deeper dive through
@@ -24,6 +25,11 @@ like a certain product, are spend more time looking through products rather than
 Another thing that we noticed was the distribution of prices were not uniform. We noticed that a large portion of the prices were between 0-500, however, there were
 also a lot of prices out of that range within the range of 750-1750 but had non-uniform frequencies. A possible explanation of this could be the wide range of products
 that this store offers. They vary from things such as headphones to water heaters. This can create the big gaps in pricing as seen through the plots that we created.
+
+The next attribute that we explored was event_time. This attribute provided us with a lot of valuable information regarding when the store got the highest amount of traffic and
+the amount of purchases that were being made by consumers at what time. We looked at this from a daily and weekly to see if we could notice any differences
+between the time spans. The main trend was that the store was most popular during the middle of the month, specifically, from 19-24 October. This can give us a lot of insight into
+forecasting inventory, and resource allocation. 
 
 Some interesting questions to ask going forward:
 
